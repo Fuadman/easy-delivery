@@ -1,0 +1,21 @@
+<div class="modal-header">
+  <h3 class="modal-title">Anhadir al carro</h3>
+</div>
+<div class="modal-body">
+  <h3>{{product.name}}</h3>
+  <h4>{{product.description}}</h4>
+  <label>
+    Cantidad
+    <input type="text" name="quantity" class="form-control" ng-model="productDetails.quantity" required autofocus>
+  </label>
+  <label>
+    consideraciones
+    <input type="text" name="comment" class="form-control" placeholder="Observaciones" ng-model="productDetails.comment">
+  </label>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" ng-click="addToCart()">Anhadir</button>
+  <button class="btn btn-default" ng-click="cancel()">Cancelar</button>
+</div>
+
+

@@ -1,0 +1,27 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="app.dashboard">Something</a>
+      <span class="dropdown pull-right">
+        <a class="navbar-brand glyphicon glyphicon-list dropdown-toggle"></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="glyphicon glyphicon-user menu-item" ui-sref="app.profile">Profile</a>
+          </li>
+          <li>
+            <a class="glyphicon glyphicon-tasks menu-item" ui-sref="app.user_guide">User Guide</a>
+          </li>
+          <li>
+            <a class="glyphicon glyphicon-log-out menu-item" ng-click="logout()">Logout</a>
+          </li>
+        </ul>
+      </span>
+
+      <a class="navbar-brand pull-right glyphicon glyphicon-shopping-cart menu" ui-sref="app.cart"></a>
+    </div>
+  </div>
+</div>
+
+<div class="container app-container" ui-view>
+  <!--<ng-include src="'views/dashboard/dashboard.html'"></ng-include>-->
+</div>

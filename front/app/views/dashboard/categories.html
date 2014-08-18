@@ -1,0 +1,9 @@
+<div class="navbar-inverse list-header">
+  <span>Seleccione una categoria</span>
+</div>
+<div class="list-group categories">
+  <div ng-repeat="category in categories.collection" ng-click="loadVendors(category.id)" class="category-item {{category.name | lowercase}}">
+    <span class="category-icon"></span>
+    <h4 class="list-group-item-heading">{{category.name}}</h4>
+  </div>
+</div>

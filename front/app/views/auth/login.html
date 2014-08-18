@@ -1,0 +1,25 @@
+<section class="login clearfix auth-content">
+  <div class="instructions">
+    <span>Por favor inicie session para poder empezar con su orden.</span>
+  </div>
+
+  <form class="form-signin custom-form" role="form" name="loginForm" method="post" ng-submit="login()" novalidate>
+    <input type="email" name="email" class="form-control" placeholder="Correo electronico" ng-model="credentials.mail" required autofocus>
+    <input type="password" class="form-control" placeholder="Contrasenha" ng-model="credentials.password" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+  </form>
+
+  <span class="message">Tambien puede crear una <a ui-sref="auth.sign_up">nueva cuenta</a>.</span>
+
+  <!--<tt>loginForm.email.$valid = {{loginForm.email.$valid}}</tt><br/>
+
+  <tt>loginForm.email.$error = {{loginForm.email.$error}}</tt><br/>
+  <tt>loginForm.email.$error.required = {{loginForm.email.$error.required}}</tt><br/>
+
+  <tt>loginForm.$valid = {{loginForm.$valid}}</tt><br/>
+
+  <tt>loginForm.$error.required = {{!!loginForm.$error.required}}</tt><br/>
+
+  <tt>loginForm.$error.email = {{!!loginForm.$error.email}}</tt><br/>-->
+
+</section>

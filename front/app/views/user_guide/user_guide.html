@@ -1,0 +1,29 @@
+<a ng-click="skipUserGuide()" class="btn pull-right">Skip Tutorial</a>
+<div id="carousel-2" class="rn-carousel-container user-guide">
+  <ul rn-carousel="" rn-carousel-indicator="" class="my-slider standard rn-carousel-slides ng-scope">
+    <li class="rn-carousel-slide">
+      <ng-include src="'views/user_guide/general_description.html'"></ng-include>
+    </li>
+    <li class="rn-carousel-slide">
+      <ng-include src="'views/user_guide/random_step.html'"></ng-include>
+    </li>
+    <li class="rn-carousel-slide">
+      <ng-include src="'views/user_guide/another_step.html'"></ng-include>
+    </li>
+  </ul>
+
+  <div class="rn-carousel-indicator rn-carousel-indicator ng-scope ng-isolate-scope"
+       id="carousel-2-indicator"
+       index="indicatorIndex"
+       items="carouselIndicatorArray" rn-carousel-indicators="">
+    <!-- ngRepeat: item in items -->
+    <span ng-repeat="item in items" ng-click="$parent.index=$index" ng-class="{active: $index==$parent.index}" class="ng-scope active"></span>
+    <!-- end ngRepeat: item in items -->
+    <span ng-repeat="item in items" ng-click="$parent.index=$index" ng-class="{active: $index==$parent.index}" class="ng-scope"></span>
+    <!-- end ngRepeat: item in items -->
+    <span ng-repeat="item in items" ng-click="$parent.index=$index" ng-class="{active: $index==$parent.index}" class="ng-scope"></span>
+    <!-- end ngRepeat: item in items -->
+    <span ng-repeat="item in items" ng-click="$parent.index=$index" ng-class="{active: $index==$parent.index}" class="ng-scope"></span>
+    <!-- end ngRepeat: item in items -->
+  </div>
+</div>

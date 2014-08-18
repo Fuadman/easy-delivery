@@ -1,0 +1,159 @@
+body {
+    background-color: #c5c5c5;
+    font-family: georgia, sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 960px;
+    background-color: #fff9f0;
+    margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+#header {
+    /*width: 960px;*/
+    /*height: 200px;*/
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+#header h2 {
+    padding: 10px;
+}
+
+#header h3 {
+    padding: 10px;
+}
+
+#nav {
+    width: 960px;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+#nav a {
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #f1f1f1;
+}
+
+#nav a:hover {
+    background-color: #bababa;
+    height: 80px;
+}
+
+#content {
+    /*width: 675px;*/
+    float: left;
+    padding: 10px;
+}
+
+#sidebar {
+    width: 200px;
+    float: right;
+    margin-bottom: 25px;
+}
+
+#sidebar a {
+    text-decoration: none;
+}
+
+#sidebar li {
+    list-style: none;
+}
+
+#footer {
+    clear: both;
+    width: 960px;
+    height: 135px;
+    border-top: 1px solid #ccc;
+}
+
+#footer p {
+    padding: 10px;
+}
+
+.header_image {
+    padding: 5px;
+    /*text-align: right;*/
+}
+
+.header_image img {
+    float: right;
+    /*width: 140px;*/
+}
+
+input.error, textarea.error {
+    border-color: #973d3d;
+    border-style: solid;
+    background: #f0bebe;
+    color: #a35959;
+}
+
+input.error:focus, textarea.error:focus {
+    border-color: #973d3d;
+    color: #a35959;
+}
+
+.message {
+    text-align: center;
+    border-color: #973d3d;
+    border-style: solid;
+    background: #f0bebe;
+    color: #a35959;
+    padding: 10px;
+    display: none;
+}
+.totalproducts {
+    float: left;
+    text-align: center;
+    border-color: #973d3d;
+    border-style: solid;
+    background: #3bf0e3;
+    color: #a35959;
+    padding: 10px;
+    margin: 10px;
+}
+.totalDelivery {
+    float: right;
+    text-align: center;
+    border-color: #973d3d;
+    border-style: solid;
+    background: #7ff04e;
+    color: #a35959;
+    padding: 10px;
+    margin: 10px;
+}
+.totalService{
+    float: right;
+    text-align: center;
+    border-color: #973d3d;
+    border-style: solid;
+    background: #0f20f0;
+    color: #a35959;
+    padding: 10px;
+    margin: 10px;
+}
+button {
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;
+}
+.actionButtonContainer{
+    text-align: center;
+}
+.red-row{
+    background: #6e73ff;
+}
+.image_upload_preview img{
+    max-width: 400px;
+    max-height: 400px;
+}

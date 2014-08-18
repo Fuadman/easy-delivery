@@ -1,0 +1,10 @@
+<section class="sign_up clearfix auth-content">
+  <form class="form-signup custom-form" role="form" name="signupForm" method="post" ng-submit="create(user)" novalidate>
+    <input type="email" class="form-control" placeholder="Correo electronico" ng-model="user.mail" required autofocus>
+    <input type="password" class="form-control" placeholder="Contrasenha" ng-model="user.password" required>
+    <input type="password" class="form-control" placeholder="Confirmar Contrasenha">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
+  </form>
+
+  <span class="message">Volver a la <a ui-sref="auth.login">pagina principal</a>.</span>
+</section>

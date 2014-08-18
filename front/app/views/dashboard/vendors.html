@@ -1,0 +1,12 @@
+<div class="navbar-inverse list-header">
+  <span>Seleccione un ... </span>
+  <a class="glyphicon glyphicon-arrow-left menu-item pull-right" ui-sref="app.categories">Volver</a>
+</div>
+
+<div class="list-group vendors">
+  <a ng-repeat="vendor in vendors.collection" ng-click="loadProducts(vendor.id)" class="list-group-item">
+    <h4 class="list-group-item-heading">{{vendor.name}}</h4>
+    <h5 class="list-group-item-heading">{{vendor.description}}</h5>
+    <h5 class="list-group-item-heading">{{vendor.address}}</h5>
+  </a>
+</div>
